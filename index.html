@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas JS/DOM/BOM</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>📋 Agenda Digital (JS + DOM + BOM)</h1>
+        <p>Aplicación de cliente para la gestión de tareas.</p>
+    </header>
+
+    <main>
+        <section class="card task-input">
+            <h2>📝 Nueva Tarea</h2>
+            <input type="text" id="task-title" placeholder="Título de la tarea (máx. 50 caracteres)" maxlength="50">
+            <button id="add-task-btn">Agregar Tarea</button>
+            <div id="feedback-message" class="hidden"></div>
+        </section>
+
+        <section class="card task-list-container">
+            <h2>Tareas Pendientes</h2>
+            <ul id="task-list">
+                </ul>
+        </section>
+        
+        <section class="card info-box">
+             <h2>🕰️ Timer (BOM: setInterval)</h2>
+             <p>El temporizador está activo y se actualiza cada segundo</p>
+             <div id="current-time">Cargando...</div>
+        </section>
+        
+    </main>
+
+    <script src="/js/data-model.js"></script>
+</body>
+</html>
